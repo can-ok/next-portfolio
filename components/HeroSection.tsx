@@ -10,7 +10,7 @@ const HeroSection=()=>{
     return(
        <section id="home">
 
-        <div className='flex flex-col text-center justify-center my-10 py-16 md:flex-row md:space-x-4 md:text-left'>
+        <div className='flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row'>
             <div className='md:w-1/2 md:mt-2'>
                 <Image className='rounded-t-full -2xl overflow-hidden' src={herophoto} width={250} height={300} alt="picture of hero" />
             </div>
