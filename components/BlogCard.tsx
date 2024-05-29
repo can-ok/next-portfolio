@@ -1,9 +1,15 @@
 import React from "react";
 
 
+interface BlogCardProps {
+    imgUrl: string;
+    title: string;
+    description: string;
+    contentUrl: string;
+}
 
 
-const BlogCard = ({ imgUrl, title, description, contentUrl }) => {
+const BlogCard:React.FC<BlogCardProps> = ({ imgUrl, title, description, contentUrl }) => {
     return (
         <div>
             <div 
