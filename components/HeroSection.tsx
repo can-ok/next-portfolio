@@ -1,7 +1,8 @@
 "use client" 
 import React from 'react';
 import Image from 'next/image';
-import { FaRegPaperPlane,FaGoodreads,FaGithub,FaLinkedin,FaTwitterSquare,FaYoutube } from 'react-icons/fa';
+import { FaRegPaperPlane,FaGoodreads,FaGithub,FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
+import { FaHashnode } from "react-icons/fa6";
 
 import herophoto from '../public/herophoto.jpeg'
 
@@ -36,7 +37,7 @@ const HeroSection=()=>{
             <a href='https://www.linkedin.com/in/can-okan-ta%C5%9Fk%C4%B1ran-a9519017b/' rel="noreferrer"  target="_blank"><FaLinkedin /></a>
             <a href='https://github.com/CantOkan' rel="noreferrer"  target="_blank"><FaGithub /></a>
             <a href='https://twitter.com/Can_Okan_' rel="noreferrer"  target="_blank"><FaTwitterSquare /></a>
-            <a href='' target="_blank"><FaYoutube/> </a> 
+            <a href='https://canokan.hashnode.dev' rel="noreferrer"  target="_blank"><FaHashnode /></a>
             </div>
 
             </div>
