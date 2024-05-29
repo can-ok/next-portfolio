@@ -28,7 +28,7 @@ const BlogSection: React.FC = () => {
                 setLoading(false);
             } catch (error) {
                 console.error('Error fetching data:', error);
-                setError(error);
+                setError(error instanceof Error ? error : new Error('Unknown error occurred'));
                 setLoading(false);
             }
         };
