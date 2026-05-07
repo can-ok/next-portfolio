@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { fetchPosts } from '../lib/graphql';
 import BlogCard from './BlogCard';
-import { title } from 'process';
 
 interface Post {
     node: {
         title: string;
         brief: string;
+        slug: string;
         url: string;
         coverImage?: {
             url: string;
@@ -47,7 +47,7 @@ const BlogSection: React.FC = () => {
           <h1 className='text-center text-2xl font-semibold py-6'>Recent Posts</h1>
           <div className="grid md:grid-cols-3 gap-8 md:gap12">
             {posts.map((post) => (
-                <BlogCard key={post.node.url} title={post.node.title} imgUrl={post.node.coverImage?.url || ''} description = {post.node.brief } contentUrl={post.node.url} />
+                <BlogCard key={post.node.slug} title={post.node.title} imgUrl={post.node.coverImage?.url || ''} description={post.node.brief} contentUrl={post.node.url as string} />
             ))}
           </div>
         </>

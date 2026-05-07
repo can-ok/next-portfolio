@@ -12,15 +12,16 @@ const HeroSection=()=>{
        <section id="home">
 
         <div className='flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row'>
-            <div className='md:w-1/2 md:mt-2'>
-                <Image className='rounded-t-full -2xl overflow-hidden' src={herophoto} width={250} height={300} alt="picture of hero" />
-            </div>
+        
             <div>
                 <h1 className='text-4xl mt-6'>Hi, I&#39;m <span className=' text-teal-600'>Can Okan Taşkıran</span></h1>
                 <p className='text-lg mt-4 mb-8'>
-                    I&#39;m
+                    I&#39;m a
                     <span className='font-semibold text-teal-600'> Software Engineer </span>
-                    based in Istanbul, Turkey. I&#39;m passionate and dedicated to my work.
+                    based in Istanbul, Turkey. I&#39;ve been passionate about building and breaking things for as long as I can remember. My primary focus is backend development, especially high-scale and distributed systems.
+                </p>
+                <p className='text-lg mt-2 mb-8'>
+                    I enjoy working with system design, microservices, and scalable architectures. Here, I share posts and projects about software engineering, distributed systems, and the technologies I work with.
                 </p>
             <div className='flex  justify-center my-3'>
                 
@@ -37,7 +38,7 @@ const HeroSection=()=>{
             <a href='https://www.linkedin.com/in/can-okan-ta%C5%9Fk%C4%B1ran-a9519017b/' rel="noreferrer"  target="_blank"><FaLinkedin /></a>
             <a href='https://github.com/CantOkan' rel="noreferrer"  target="_blank"><FaGithub /></a>
             <a href='https://twitter.com/Can_Okan_' rel="noreferrer"  target="_blank"><FaTwitterSquare /></a>
-            <a href='https://canokan.hashnode.dev' rel="noreferrer"  target="_blank"><FaHashnode /></a>
+            <a href='https://hashnode.com/@CanOkan' rel="noreferrer"  target="_blank"><FaHashnode /></a>
             </div>
 
             </div>
